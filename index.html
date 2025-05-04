@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Clone - Salary Comparison</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-search">
+                <div class="logo">
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <div class="search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i><span>Home</span></a></li>
+                    <li><a href="#"><i class="fas fa-user-friends"></i><span>Network</span></a></li>
+                    <li><a href="#"><i class="fas fa-briefcase"></i><span>Jobs</span></a></li>
+                    <li><a href="#"><i class="fas fa-comment-dots"></i><span>Messaging</span></a></li>
+                    <li><a href="#"><i class="fas fa-bell"></i><span>Notifications</span></a></li>
+                    <li class="profile">
+                        <img src="https://images.app.goo.gl/1L8gbiciYedatJcD6" alt="Profile">
+                        <span>Me <i class="fas fa-caret-down"></i></span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="left-sidebar">
+            <div class="profile-card">
+                <div class="cover-photo"></div>
+                <div class="profile-info">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Profile" class="profile-pic">
+                    <h3>John Doe</h3>
+                    <p>Software Engineer at Tech Corp</p>
+                </div>
+                <div class="profile-stats">
+                    <div class="stat">
+                        <span>Connections</span>
+                        <strong>456</strong>
+                    </div>
+                    <div class="stat">
+                        <span>Profile viewers</span>
+                        <strong>1,234</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="premium-card">
+                <p>Access exclusive tools & insights</p>
+                <p><i class="fas fa-crown"></i> Try Premium for free</p>
+            </div>
+
+            <div class="my-items">
+                <p><i class="fas fa-bookmark"></i> My items</p>
+            </div>
+        </div>
+
+        <div class="feed">
+            <div class="share-box">
+                <div class="share-input">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Profile">
+                    <input type="text" placeholder="Start a post">
+                </div>
+                <div class="share-options">
+                    <div class="option">
+                        <i class="fas fa-image"></i>
+                        <span>Photo</span>
+                    </div>
+                    <div class="option">
+                        <i class="fas fa-video"></i>
+                        <span>Video</span>
+                    </div>
+                    <div class="option">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Event</span>
+                    </div>
+                    <div class="option">
+                        <i class="fas fa-newspaper"></i>
+                        <span>Write article</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-header">
+                    <img height="12px" src="https://randomuser.me/api/portraits/men/75.jpg" alt="Profile">
+                    <div class="post-info">
+                        <h4>Sarah Johnson</h4>
+                        <p>Product Manager at Design Co</p>
+                        <span>2d • <i class="fas fa-globe-americas"></i></span>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <p>Excited to announce our new product launch! After months of hard work, we're finally ready to share it with the world. #productlaunch #innovation</p>
+                    <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Post image">
+                </div>
+                <div class="post-stats">
+                    <div class="likes">
+                        <i class="fas fa-thumbs-up"></i>
+                        <span>124</span>
+                    </div>
+                    <div class="comments">
+                        <span>24 comments</span>
+                    </div>
+                </div>
+                <div class="post-actions">
+                    <button><i class="far fa-thumbs-up"></i> Like</button>
+                    <button><i class="far fa-comment"></i> Comment</button>
+                    <button><i class="fas fa-share"></i> Share</button>
+                    <button><i class="far fa-paper-plane"></i> Send</button>
+                </div>
+            </div>
+
+            <!-- Salary Comparison Feature -->
+            <div class="comparison-card">
+                <div class="comparison-header">
+                    <h3>Salary & Skill Comparison</h3>
+                    <p>Compare salaries and required skills for different positions</p>
+                </div>
+                <div class="comparison-form">
+                    <div class="form-group">
+                        <label for="position1">Position 1:</label>
+                        <select id="position1">
+                            <option value="">Select a position</option>
+                            <option value="software_engineer">Software Engineer</option>
+                            <option value="product_manager">Product Manager</option>
+                            <option value="data_scientist">Data Scientist</option>
+                            <option value="ux_designer">UX Designer</option>
+                            <option value="devops">DevOps Engineer</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="position2">Position 2:</label>
+                        <select id="position2">
+                            <option value="">Select a position</option>
+                            <option value="software_engineer">Software Engineer</option>
+                            <option value="product_manager">Product Manager</option>
+                            <option value="data_scientist">Data Scientist</option>
+                            <option value="ux_designer">UX Designer</option>
+                            <option value="devops">DevOps Engineer</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="experience">Years of Experience:</label>
+                        <select id="experience">
+                            <option value="0-2">0-2 years</option>
+                            <option value="3-5">3-5 years</option>
+                            <option value="6-10">6-10 years</option>
+                            <option value="10+">10+ years</option>
+                        </select>
+                    </div>
+                    <button id="compare-btn">Compare</button>
+                </div>
+                <div class="comparison-results" id="comparison-results">
+                    <!-- Results will be displayed here -->
+                </div>
+            </div>
+        </div>
+
+        <div class="right-sidebar">
+            <div class="news-card">
+                <h3>LinkedIn News</h3>
+                <ul>
+                    <li>
+                        <h4>Tech hiring slows</h4>
+                        <p>2d ago • 5,234 readers</p>
+                    </li>
+                    <li>
+                        <h4>Remote work here to stay</h4>
+                        <p>3d ago • 8,765 readers</p>
+                    </li>
+                    <li>
+                        <h4>AI skills in demand</h4>
+                        <p>4d ago • 12,345 readers</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="ads-card">
+                <p>Ad • <small>Sponsored</small></p>
+                <img src="https://via.placeholder.com/250x250" alt="Advertisement">
+                <h4>Boost your career with our courses</h4>
+                <p>skillup.com</p>
+            </div>
+
+            <div class="people-card">
+                <h3>People you may know</h3>
+                <div class="person">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Profile">
+                    <div class="person-info">
+                        <h4>Lisa Wong</h4>
+                        <p>Marketing Director at Brand Co</p>
+                        <button>Connect</button>
+                    </div>
+                </div>
+                <div class="person">
+                    <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Profile">
+                    <div class="person-info">
+                        <h4>Michael Chen</h4>
+                        <p>Senior Developer at App Inc</p>
+                        <button>Connect</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
